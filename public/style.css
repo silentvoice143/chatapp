@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Arapey&family=Cormorant+Garamond&family=Lobster&family=Merriweather&family=Montserrat&family=Mulish&family=Nunito&family=Pacifico&family=Rokkitt&family=Sail&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ffcbcb;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chat_section{
+    overflow: hidden;
+    position: relative;
+    width:800px;
+    max-width: 90%;
+    background: #ffffff;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1) , 0 4px 6px -2px rgba(0,0,0,0.05);
+}
+
+.brand{
+    padding:20px;
+    background:#f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    color:#444;
+    margin-left: 10px;
+}
+
+.message_area{
+    height:500px;
+    padding:16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+
+textarea{
+    width: 100%;
+    border:none;
+    padding:20px;
+    font-size: 16px;
+    outline: none;
+    background: #FBFBFB;
+}
+
+.message{
+    padding:20px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    max-width:300px;
+    position:relative;
+}
+
+.incoming{
+    background: #ef5050;
+    color:#fff;
+    margin-right:auto;
+}
+
+.outgoing{
+    background: #ffcbcb;
+    color:#787986;
+    margin-left: auto;
+}
+
+.message h4{
+    position:absolute;
+    top:-20px;
+    left:0;
+    color:#333;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.task-button{
+    padding:4px 6px;
+    background: white;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+ }
+
+ .task-section{
+    /* width:800px; */
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    right:-200px;
+    background:#ef5050;
+    color:white;
+    transition: 0.5s;
+    /* padding:12px; */
+ }
+
+ .tasks{
+    display: flex;
+    justify-content: space-around;
+    width:34%;
+ }
+
+ #taskbox{
+    border:none;
+    outline:none;
+    padding:2px 4px;
+ }
+
+ .task-section ul{
+    list-style:none ;
+ }
+
+ .task-item{
+    padding:6px 8px;
+    border-bottom:1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .task-item:hover{
+    border-bottom: 1px solid black;
+ }
+
+ .doer{
+    margin-left:6px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+ }
+ 

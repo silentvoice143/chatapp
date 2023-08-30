@@ -1,0 +1,18 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "this i sa real time chat app for assigning task to the person",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "silentvoice",
+  "license": "ISC",
+  
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "path": "^0.12.7",
+    "socket.io": "^4.7.2"
+  }
+}
