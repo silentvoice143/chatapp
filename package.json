@@ -4,7 +4,7 @@
   "description": "this i sa real time chat app for assigning task to the person",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"nodemon server.js"
   },
   "author": "silentvoice",
   "license": "ISC",

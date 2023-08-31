@@ -24,6 +24,8 @@ body{
 }
 
 .brand{
+    z-index: 2;
+    position: relative;
     padding:20px;
     background:#f1f1f1;
     display: flex;
@@ -45,6 +47,7 @@ body{
     flex-direction: column;
     overflow-y: auto;
     padding-top: 40px;
+    position: relative;
 }
 
 textarea{
@@ -100,25 +103,34 @@ a{
     border-radius: 8px;
     font-weight: 600;
     cursor: pointer;
+    margin:0 4px;
  }
 
  .task-section{
-    /* width:800px; */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    z-index: 2;
+    width:500px;
     display: flex;
     justify-content: center;
     position:absolute;
-    right:-200px;
+    top:12%;
+    right:5%;
     background:#ef5050;
     color:white;
     transition: 0.5s;
+    
+    transform: scaleY(0);
+    transform-origin: top;
     /* padding:12px; */
  }
 
  .tasks{
     display: flex;
     justify-content: space-around;
-    width:34%;
  }
+
+
 
  #taskbox{
     border:none;
@@ -128,6 +140,7 @@ a{
 
  .task-section ul{
     list-style:none ;
+    width:100%;
  }
 
  .task-item{
@@ -143,8 +156,42 @@ a{
  }
 
  .doer{
+    z-index: -1;
     margin-left:6px;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
+    color:black;
+ }
+
+ .love{
+    display: none;
+    position:absolute;
+    top:40%;
+    left:40%;
+    font-size: 4rem;
+    color:#ffcaca;
+ }
+
+ .p{
+    font-size: 14px;
+    top:50%;
+    left:41%;
+ }
+
+ @media screen and (max-width:700px){
+    .love{
+        display: none;
+        position:absolute;
+        top:40%;
+        left:35%;
+        font-size: 4rem;
+        color:#ffcaca;
+     }
+    
+     .p{
+        font-size: 14px;
+        top:50%;
+        left:41%;
+     }
  }
  
